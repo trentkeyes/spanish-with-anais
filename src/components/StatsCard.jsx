@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const Counter = () => {
+const StatsCard = () => {
   return (
     <motion.div
       initial={{ y: 0, opacity: 0.2 }}
@@ -8,7 +8,7 @@ const Counter = () => {
       viewport={{ once: false }}
       transition={{ duration: 0.6 }}
     >
-      <div className="my-48 pt-8 pb-8 shadow-xl border border-green-600">
+      <div className="my-8 pt-8 pb-8 shadow-sm border border-4 border-green-500 rounded-lg lg:w-2/3 mx-auto">
         <div className="flex justify-evenly gap-4">
           <div className="text-center">
             <h3 className="text-5xl font-bold pb-6 px-6">178</h3>
@@ -28,4 +28,4 @@ const Counter = () => {
   );
 };
 
-export default Counter;
+export default StatsCard;
