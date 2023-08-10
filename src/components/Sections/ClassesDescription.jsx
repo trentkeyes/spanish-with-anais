@@ -4,12 +4,12 @@ const ClassesDescription = () => {
   return (
     <div>
       <motion.div
-        initial={{ y: 0, opacity: 0.2 }}
-        whileInView={{ y: [100, -10, 0], opacity: 1 }}
+        initial={{ x: 0, opacity: 0.2 }}
+        whileInView={{ x: [500, -40, 0], opacity: 1 }}
         viewport={{ once: false }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.8 }}
       >
-        <div className="flex shadow-sm rounded-lg overflow-hidden border border-green-500 my-8 border-4 gap-8 lg:w-2/3 mx-auto">
+        <div className="mb-24 flex shadow-sm rounded-lg overflow-hidden border border-green-500 my-8 border-4 gap-8 lg:w-2/3 mx-auto">
           <img
             className="w-1/3 object-cover object-right"
             src="/src/assets/pexels-kevin-villavicencio-hernandez-12687967.jpg"
